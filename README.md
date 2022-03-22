@@ -1,4 +1,5 @@
 # Multi-dev container example with Dapr
+This is a tweaked version of https://github.com/dapr/samples/tree/master/hello-docker-compose
 
 Usage locally:
 1. Clone this repository
