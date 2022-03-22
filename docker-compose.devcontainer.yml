@@ -1,0 +1,15 @@
+version: '3'
+services:
+  nodeapp:
+    build: 
+      context: ./node
+      target: devcontainer
+    volumes:
+        - .:/workspace
+
+  pythonapp:
+    build: 
+      context: ./python
+      target: devcontainer
+    volumes:
+        - .:/workspace

@@ -1,0 +1,17 @@
+{
+    "dockerComposeFile": [
+        "../docker-compose.yml",
+        "../docker-compose.devcontainer.yml"
+    ],
+    "service": "nodeapp",
+    "workspaceFolder": "/workspace/node",
+    "runServices": ["nodeapp", "nodeapp-dapr"],
+    "overrideCommand": true,
+
+    "extensions": ["dbaeumer.vscode-eslint"],
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "postCreateCommand": "npm install"
+
+}

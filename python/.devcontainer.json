@@ -1,0 +1,15 @@
+{
+    "dockerComposeFile": [
+        "../docker-compose.yml",
+        "../docker-compose.devcontainer.yml"
+    ],
+    "service": "pythonapp",
+    "workspaceFolder": "/workspace/python",
+    "runServices": ["pythonapp", "pythonapp-dapr"],
+    "overrideCommand": true,
+
+    "extensions": ["ms-python.python"],
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+    }
+}
