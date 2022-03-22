@@ -1,3 +1,17 @@
+# Multi-dev container example with Dapr
+
+Usage locally:
+1. Clone this repository
+2. Use VS Code Remote - Containers to open "node" folder in a container
+3. Use VS Code Remote - Containers in a new window to open the "python" folder
+
+The .devcontainer.json files in these two folder contain the configuration for the containers. A docker-compose.devcontainer.yml is inlcuded in addition to the primary config to with the variations. Each Dockerfile is multi-stage and includes a devcontainer stage that does not copy the application into the container and uses a common script for alpine to add some niceties.
+
+You can then start/stop and build the application like you would locally. Doing a "Rebuild" of either container will not affect in flight source code.
+
+This does not work in Codespaces yet, but a workaround script is available here: https://github.com/codespaces-contrib/codespaces-multi-dev-container
+
+----
 # Dapr with Docker-Compose
 
 ## Sample info
